@@ -1,0 +1,32 @@
+<div class="composer">
+  <form id="study-form">
+    <label class="drop" id="drop">
+      <input id="file" name="image" type="file" accept="image/png,image/jpeg,image/webp,image/bmp" />
+      <div class="film preview" id="preview">
+        <div class="preview-empty" id="preview-empty">
+          <strong>Drop a chest X-ray</strong>
+          <span>PNG or JPEG. It stays on this computer.</span>
+        </div>
+        <img id="preview-img" alt="" hidden />
+      </div>
+    </label>
+    <label class="field" for="notes">Clinical notes</label>
+    <textarea id="notes" name="notes" rows="6" placeholder="Example: shortness of breath for two days, fever, history of heart failure."></textarea>
+    <div class="form-row">
+      <button id="run" class="primary" type="submit">Run review</button>
+      <p class="hint">Ctrl + Enter also runs the review.</p>
+    </div>
+  </form>
+  <ol class="steps" id="steps" hidden></ol>
+</div>
+<div class="report" id="report">
+  <div class="empty-report" id="empty-report">
+    <p class="eyebrow">Waiting for a film</p>
+    <h2>The report opens here.</h2>
+    <ol>
+      <li>Add a frontal chest X-ray.</li>
+      <li>Add notes if you have them. Notes are optional.</li>
+      <li>Run the review. The first study downloads the models and can take several minutes.</li>
+    </ol>
+  </div>
+</div>

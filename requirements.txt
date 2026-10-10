@@ -1,0 +1,21 @@
+torch
+torchvision
+torchxrayvision
+open_clip_torch
+ultralytics
+clip @ git+https://github.com/ultralytics/CLIP.git
+transformers==4.40.0
+accelerate
+scikit-learn
+scikit-image
+fastapi
+uvicorn
+python-multipart
+pillow
+numpy
+datasets
+joblib
+opencv-python-headless
+einops
+sentencepiece
+protobuf

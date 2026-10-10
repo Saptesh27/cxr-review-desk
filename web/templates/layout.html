@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{title}} · CXR Review Desk</title>
+  <link rel="stylesheet" href="/assets/app.css" />
+</head>
+<body class="page-{{page}}">
+  <div class="shell">
+    <aside class="rail">
+      <a class="brand" href="/">
+        <span class="mark" aria-hidden="true"></span>
+        <div>
+          <p class="brand-kicker">Workstation</p>
+          <h1>CXR Review Desk</h1>
+        </div>
+      </a>
+      <nav class="nav" aria-label="Sections">
+        <a class="nav-btn" data-nav="new" href="/">New study</a>
+        <a class="nav-btn" data-nav="history" href="/history">History <span id="history-count" class="count">0</span></a>
+        <a class="nav-btn" data-nav="training" href="/training">Training record</a>
+        <a class="nav-btn" data-nav="about" href="/about">How it works</a>
+      </nav>
+      <p class="rail-note">Research tool. A person still reads anything the desk refers.</p>
+    </aside>
+
+    <div class="workspace">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Chest radiograph assistant</p>
+          <h2 class="top-title">{{heading}}</h2>
+        </div>
+        <div class="pills" id="status-pills" aria-live="polite"></div>
+      </header>
+      <main class="page">
+        {{body}}
+      </main>
+    </div>
+  </div>
+  <dialog id="lightbox">
+    <form method="dialog"><button class="ghost" value="cancel">Close</button></form>
+    <img id="lightbox-img" alt="Enlarged film" />
+  </dialog>
+  <script src="/assets/common.js"></script>
+  {{scripts}}
+</body>
+</html>

@@ -1,0 +1,20 @@
+<div class="panel about">
+  <p class="eyebrow">What this desk does</p>
+  <h2>Four readers, one decision.</h2>
+  <p class="lede">A film and optional notes go to four frozen models. A small fusion model, trained on a public NIH subset, combines the three image readers. If they disagree, the study is referred instead of auto-reported.</p>
+  <div class="flow" aria-label="Review flow">
+    <div class="flow-card">Film + notes</div>
+    <div class="flow-agents">
+      <span>Local texture<br />DenseNet-121</span>
+      <span>Global pattern<br />ViT-B/16</span>
+      <span>Localization<br />YOLOv8-World</span>
+      <span>Clinical notes<br />CheXagent</span>
+    </div>
+    <div class="flow-card">Trained fusion</div>
+    <div class="flow-split">
+      <span>Agree: final diagnosis</span>
+      <span>Disagree: refer, with maps</span>
+    </div>
+  </div>
+  <p>The long explanation, with algorithm diagrams, is in <strong>PROJECT.md</strong> in the project folder. Setup on another computer is in <strong>STEPS.md</strong>.</p>
+</div>
