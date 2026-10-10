@@ -31,7 +31,7 @@ python3.11 --version
 Windows example:
 
 ```text
-cd C:\path\to\Ishita-Wag-Proj
+cd C:\path\to\cxr-review-desk
 ```
 
 ## 3. Create the virtual environment
